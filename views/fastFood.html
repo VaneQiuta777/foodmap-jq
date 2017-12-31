@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <!--Framework bootstrap CSS-->
+  <link rel="stylesheet" href="../vendors/bootstrap/css/bootstrap.min.css">
+  <!--CSS Personalizado-->
+  <link rel="stylesheet" href="../css/main.css">
+  <title>Fast Food</title>
+</head>
+
+<body>
+  <!--SECTION HEADER-->
+  <header>
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12">
+          <div class="jumbotron p0 mt7">
+            <h1 class="logo-food text-center">F O O D M A P</h1>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!--SECTION MAPA -->
+  <section>
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12">
+          <a href="#" class="thumbnail">
+            <img src="../assets/images/map.png" alt="mapa">
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!--SECTION FILTRAR RESTAURANTES -->
+  <section class="">
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12 col-md-6">
+          <h2 class="col-yellow text-center">Comida cerca de ti</h2>
+          <form class="">
+            <div id="filtrarRestaurant" class="input-group">
+              <input type="text" class="form-control" placeholder="Selecciona un distrito...">
+              <span class="input-group-btn">
+                <button class="btn btn-default" type="button">
+                  <span class="glyphicon glyphicon-search"></span>
+                </button>
+              </span>
+            </div>
+          </form>
+          <div class="row imagesRestaurant">
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!--Enlazamos JQuery-->
+  <script type="text/javascript" src="../vendors/js/jquery-3.2.1.min.js"></script>
+  <!--Enlazamos app.js para darle funcionabilidad a nuestra estructura-->
+  <script type="text/javascript" src="../js/fastFood.js"></script>
+  <!--Base de datos JSON-->
+  <script src='../js/data.js'></script>
+</body>
+
+</html>
